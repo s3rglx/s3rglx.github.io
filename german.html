@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Resume of Sergej Lopatin</title>
+    <!-- <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"> -->
+    <!-- <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"> -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" rel="stylesheet">
+    <style type="text/css">
+    @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800);
+@charset "utf-8";
+@-webkit-viewport   { width: device-width; }
+@-moz-viewport      { width: device-width; }
+@-ms-viewport       { width: device-width; }
+@-o-viewport        { width: device-width; }
+@viewport           { width: device-width; }
+
+body{
+  font-family: 'Open Sans', Arial, Tahoma;
+  font-weight: 400;
+  color: #363636;
+  background: #334960;
+}
+blockquote {
+  font-size: 1em;
+}
+
+.container{
+  margin-top: 80px;
+  margin-bottom: 15px;
+  background: #fff;
+}
+
+#photo-header{
+  margin-top: -75px;
+}
+#photo{
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  overflow: hidden;
+  padding: 5px;
+  background: #334960;
+  display: inline-block;
+}
+#photo img{
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+#text-header h1{
+  margin: 0;
+  padding: 0;
+  font-size: 1.5em;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+}
+#text-header h1::first-line{
+  font-size: 1.5em;
+  font-weight: 800;
+  line-height: 1.5em;
+}
+#text-header h1 span{
+  color: #334960;
+  opacity: 0.7;
+}
+#text-header h1 sup{
+  opacity: 0.5;
+}
+#text-header:after{
+  width: 100%;
+  height: 3px;
+  border-bottom: 1px solid #ddd;
+  margin-top: 15px;
+  content: '';
+  display: block;
+}
+
+.box{
+  padding-bottom: 10px;
+  margin-bottom: 25px;
+}
+.box h2{
+  color: #227c74;
+  font-size: 1.5em;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+#awards,
+#education{
+  margin-top: 20px;
+  margin-bottom: 0;
+  position: relative;
+  padding: 1em 0;
+  list-style: none;
+}
+#awards:before,
+#education:before {
+  width: 5px;
+  height: 100%;
+  position: absolute;
+  left: 35px;
+  top: 0;
+  content: ' ';
+  display: block;
+  background: #32475c;
+  background: -moz-linear-gradient(top,  #ffffff 0%, #32475c 7%, #32475c 89%, #ffffff 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(7%,#32475c), color-stop(89%,#32475c), color-stop(100%,#ffffff));
+  background: -webkit-linear-gradient(top,  #ffffff 0%,#32475c 7%,#32475c 89%,#ffffff 100%);
+  background: -o-linear-gradient(top,  #ffffff 0%,#32475c 7%,#32475c 89%,#ffffff 100%);
+  background: -ms-linear-gradient(top,  #ffffff 0%,#32475c 7%,#32475c 89%,#ffffff 100%);
+  background: linear-gradient(to bottom,  #ffffff 0%,#32475c 7%,#32475c 89%,#ffffff 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff',GradientType=0 );
+}
+#awards li,
+#education li{
+  width: 100%;
+  z-index: 2;
+  position: relative;
+  float: left;
+}
+#awards .year,
+#education .year{
+  width: 14%;
+  background: #fff;
+  padding: 10px;
+  font-weight: 700;
+  display: inline-block;
+}
+#awards .description,
+#education .description{
+  width: 83%;
+  display: inline-block;
+  background: #eee;
+  margin-bottom: 10px;
+  position: relative;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+}
+#awards .description:after,
+#education .description:after {
+  content: '';
+  position: absolute;
+  top: 15px;
+  right: 0;
+  left: -16px;
+  height: 0;
+  width: 0;
+  border: solid transparent;
+  border-right-color: #eee;
+  border-width: 8px;
+  pointer-events: none;
+}
+#awards .description h3,
+#education .description h3{
+  font-size: 1.2em;
+  margin: 0;
+  padding: 0;
+  font-weight: 700;
+}
+#awards .description p,
+#education .description p{
+  margin-top: 5px;
+  padding: 0;
+}
+
+.job{
+  margin-bottom: 15px;
+}
+.job .details {
+  margin-left: 3%;
+  width: 95%;
+  padding: 10px;
+  margin-bottom: 10px;
+  background: #eee;
+  border-bottom: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+}
+.job .where{
+  font-size: 1.2em;
+  font-weight: bold;
+}
+.job .year{
+  opacity: 0.7;
+}
+.job .profession{
+  font-size: 1.2em;
+  font-weight: bold;
+}
+.job .description{
+  line-height: 1.5em;
+}
+.job .highlights{
+  padding: 5px 0;
+  font-weight: bold;
+}
+.job .job-details {
+  padding-left: 5%;
+  width: 100%;
+}
+.publication {
+  margin-bottom: 0;
+}
+.publication .name{
+  font-size: 1em;
+  font-weight: bold;
+}
+.publication .year{
+    opacity: 0.7;
+}
+.publication p{
+  margin: 0;
+  padding-top: 10px;
+}
+
+.contact-item{
+  width: 100%;
+  float: left;
+}
+.contact-item .icon{
+  padding: 10px;
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  color: #32475c;
+  background: #eee;
+}
+.contact-item:last-child .icon{
+  border-bottom: none;
+}
+.contact-item .title{
+  width: 80%;
+  width: calc(100% - 55px);
+  font-weight: 700;
+  opacity: 0.9;
+}
+.contact-item .title.only{
+  margin-top: 10px;
+}
+.contact-item .description{
+  width: 80%;
+  width: calc(100% - 55px);
+  color: #334960;
+}
+
+.item-interests,
+.item-skills{
+  height: 30px;
+  color: #334960;
+  padding: 5px 10px;
+  margin-bottom: 5px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 1.1em;
+  font-weight: 600;
+}
+.interest,
+.skill{
+  color: #fff;
+  display: inline-block;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  padding: 5px 10px;
+  background: #32475c;
+  position: relative;
+  font-size: .85em;
+}
+.skill-level {
+  background-color: #227c74;
+  border-radius: 4px;
+  color: #fff;
+  padding: 1px 8px;
+  font-size: .75em;
+  position: absolute;
+  margin: 1px 10px;
+}
+
+#language-skills .skill{
+  margin: 10px 0;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+    </style>
+    <style type="text/css" media="print">
+    body {
+  font-size: .95em;
+  -webkit-print-color-adjust: exact;
+}
+
+a[href]:after {
+  content: none !important;
+}
+
+#photo{
+  display: none;
+}
+
+.box {
+  margin-bottom: -10px;
+}
+
+blockquote,
+#education,
+#awards,
+.contact-item,
+.publication,
+.skills,
+.interests {
+  page-break-inside: avoid;
+}
+
+.col-sm-5{
+  width: 40%;
+  padding: 0 15px;
+}
+
+.col-sm-7{
+  width: 60%;
+  padding: 0 15px;
+}
+
+.skills .col-sm-offset-1,
+.interests .col-sm-offset-1{
+  margin-top: -10px;
+  margin-bottom: 5px;
+}
+
+#education {
+  margin: 0;
+  margin-bottom: -20px;
+}
+#awards:before,
+#education:before {
+  background: none;
+}
+
+#awards .description,
+#education .description,
+.job .details {
+  border: 1px solid #eee;
+}
+.publication,
+.publication .panel-heading,
+.publication .name{
+  margin: 0;
+  padding: 0 5px;
+  border: none;
+}
+.publication .panel-body {
+  padding: 0 10px;
+  margin: 0;
+}
+
+.badge {
+  margin: 0;
+}
+
+.list-group-item{
+  border: none;
+  margin: 0;
+  padding: 5px 15px;
+}
+.list-group-item:after{
+  content: '';
+  position: absolute;
+  top: 8px;
+  right: 0;
+  left: -1px;
+  height: 0;
+  width: 0;
+  border: solid transparent;
+  border-right-color: #999;
+  border-width: 4px;
+  pointer-events: none;
+ }
+
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <div id="photo-header" class="text-center">
+            <!-- PHOTO (AVATAR) -->
+            <div id="photo">
+              <img src="https:&#x2F;&#x2F;1.gravatar.com&#x2F;avatar&#x2F;7ff56bbad5ab043e03d3f32b2e550cf1b9b91dd771bece2a6d15c86e78429048?size&#x3D;512" alt="avatar">
+            </div>
+            <div id="text-header" >
+              <h1>Sergej Lopatin<br><span>Softwareentwickler</span></h1>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 col-sm-7">
+          <!-- ABOUT ME -->
+          <div class="box">
+            <h2><i class="fas fa-user ico"></i> Über mich</h2>
+            <p>Ich habe umfassende Erfahrung in der Entwicklung und Integration komplexer Softwarelösungen, insbesondere in den Bereichen Cloud-Technologien, eingebettete Systeme und Automobilsoftware. Mich faszinieren Themen rund um künstliche Intelligenz und Bildverarbeitung. Ich bin ein Teamplayer, übernehme gerne Verantwortung und begegne Herausforderungen mit Begeisterung.</p>
+          </div>
+          <!-- WORK EXPERIENCE -->
+          <div class="box">
+            <h2><i class= "fas fa-suitcase ico"></i> Berufserfahrung</h2>
+              <div class="job clearfix">
+                <div class="row">
+                  <div class="details">
+                    <div class="where">
+                      Continental
+                      <div class="pull-right">
+                        Wetzlar, Hessen
+                      </div>
+                    </div>
+                    <div class="description">
+                      Ein Automobilzulieferer
+                    </div>
+                    <div class="address">
+                      <a href="https:&#x2F;&#x2F;www.continental.com" target= "_blank"><i class="fas fa-globe ico"></i> https:&#x2F;&#x2F;www.continental.com</a>
+                    </div>
+                    <div class="year">September 2022 – Heute</div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="job-details col-xs-11">
+                    <div class="profession">Softwareentwickler&#x2F;Integrator</div>
+                    <div class="description">
+                      Entwicklung einer cloudbasierten Plattform (SaaS) zur Entwicklung, Bereitstellung und Wartung softwaredefinierter Fahrzeugfunktionen und virtueller Steuergeräte.
+                      <div class="highlights">Highlights</div>
+                      <ul class="list-group">
+                        <li class="list-group-item">Implementierung eines Go-basierten Kommandozeilenprogramms (ähnlich zu kubectl oder docker cli) zur Verwaltung und Interaktion mit virtuellen Maschinen.</li>
+                        <li class="list-group-item">Optimierung der Startzeiten einer virtuellen Maschine.</li>
+                        <li class="list-group-item">Kostensenkung der Resourcenbereitstellung durch die Portierung von Amazon-Machine-Image-basierten Maschinen auf eine mit Kubernetes orchestrierte, Container-basierte Lösung.</li>
+                        <li class="list-group-item">Portierung einer Embedded-Linux-Plattform auf ein Yocto basiertes System.</li>
+                        <li class="list-group-item">Entwicklung eines C++-basierten Installers zur Verwaltung von App- und System-Updates.</li>
+                        <li class="list-group-item">Generierung von Softwareartefakten auf der Basis von JFrog Conan und Artifactory.</li>
+                        <li class="list-group-item">Konzeption und Implementierung von Integrationstests für physische und virtuelle Plattformen.</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="job clearfix">
+                <div class="row">
+                  <div class="details">
+                    <div class="where">
+                      
+                    </div>
+                    <div class="year">Juni 2021 – September 2022</div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="job-details col-xs-11">
+                    <div class="profession">Softwareentwickler</div>
+                    <div class="description">
+                      Verantwortlich für die Software-Integrationstests und die Integration von Software-Komponenten in die AUTOSAR Adaptive Plattform eines Steuergeräts.
+                      <div class="highlights">Highlights</div>
+                      <ul class="list-group">
+                        <li class="list-group-item">Sicherstellung der Softwarequalität durch die Entwicklung, Durchführung und Automatisierung von Integrationstests gemäß Automotive SPICE.</li>
+                        <li class="list-group-item">Entwicklung eines Python-Moduls auf Basis von pandas und mysql zur Analyse von DLT (Diagnostic Log and Trace) Dateien.</li>
+                        <li class="list-group-item">Umsetzung signifikanter Verbesserungen in der Testautomatisierung mit Jenkins und Python.</li>
+                        <li class="list-group-item">Erstellung und Optimierung von Softwareanforderungen in Übereinstimmung mit den Traceability-Anforderungen der ASPICE-Regeln.</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="job clearfix">
+                <div class="row">
+                  <div class="details">
+                    <div class="where">
+                      
+                    </div>
+                    <div class="year">Februar 2012 – Juni 2021</div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="job-details col-xs-11">
+                    <div class="profession">Maschinenbautechniker</div>
+                    <div class="description">
+                      Prüfmittelkonstrukteur und Systemtester im Zuverlässigkeitslabor. Verantwortlich für die Durchführung mechanischer Tests und die Entwicklung von Prüfvorrichtungen.
+                      <div class="highlights">Highlights</div>
+                      <ul class="list-group">
+                        <li class="list-group-item">Planung und Durchführung mechanischer Tests zur Bewertung der Produktzuverlässigkeit gemäß Normen und Standards.</li>
+                        <li class="list-group-item">Erstellung parametrisierter CAD-Modelle zur Effizienz- und Qualitätssteigerung der Vorrichtungsentwicklung.</li>
+                        <li class="list-group-item">Konstruktion von Lebensdauertest- und Vibrationstestvorrichtungen gemäß Produktanforderungen für Radio- und Infotainmentsysteme sowie USB-C Hubs und Lautsprechersysteme.</li>
+                        <li class="list-group-item">Betreuung von Auszubildenden und Praktikanten.</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="job clearfix">
+                <div class="row">
+                  <div class="details">
+                    <div class="where">
+                      
+                    </div>
+                    <div class="year">Februar 2010 – Februar 2012</div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="job-details col-xs-11">
+                    <div class="profession">Systemtester</div>
+                    <div class="description">
+                      Verantwortlich für die Entwicklung und den Aufbau von Testplätzen. Mitarbeit an der Modifikation von Testfahrzeugen.
+                      <div class="highlights">Highlights</div>
+                      <ul class="list-group">
+                        <li class="list-group-item">Eigenverantwortliche Koordination, Planung und Aufbau einer Kleinserie von Testbenches für Infotainmentsysteme.</li>
+                        <li class="list-group-item">Entwicklung und Aufbau von Prüfständen und Testgeräten, um die Effizienz und Qualität der Tests zu verbessern.</li>
+                        <li class="list-group-item">Durchführung und Optimierung von Modifikationen an Testfahrzeugen, um spezifische Testanforderungen zu erfüllen.</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+          <!-- AWARDS -->
+          <div class="box">
+            <h2><i class="fas fa-certificate ico"></i> Stipendien und Auszeichnungen</h2>
+            <ul id="awards" class="clearfix">
+              <li>
+                <div class="year pull-left"> 2022</div>
+                <div class="description pull-right">
+                  <h3>AALE</h3>
+                  <p><i class="fas fa-trophy ico"></i> Studentenpreis</p>
+                  <p>1. Platz beste Bachelorarbeit.</p>
+                </div>
+              </li>
+              <li>
+                <div class="year pull-left">April  2019</div>
+                <div class="description pull-right">
+                  <h3>SBB</h3>
+                  <p><i class="fas fa-trophy ico"></i> Aufstiegsstipendium</p>
+                  <p>Studienförderung für Berufserfahrene.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-5">
+          <!-- CONTACT -->
+          <div class="box clearfix">
+            <h2><i class="fas fa-bullseye ico"></i> Kontakt</h2>
+            <div class="contact-item">
+              <div class="icon pull-left text-center"><span class="fab fa-linkedin fa-fw"></span></div>
+              <div class="title pull-right">LinkedIn</div>
+              <div class="description pull-right"><a href="https:&#x2F;&#x2F;www.linkedin.com&#x2F;in&#x2F;sergej-lopatin-576346266&#x2F;" target="_blank">https:&#x2F;&#x2F;www.linkedin.com&#x2F;in&#x2F;sergej-lopatin-576346266&#x2F;</a></div>
+            </div>
+            <div class="contact-item">
+              <div class="icon pull-left text-center"><span class="fab fa-github fa-fw"></span></div>
+              <div class="title pull-right">GitHub</div>
+              <div class="description pull-right"><a href="https:&#x2F;&#x2F;www.github.com&#x2F;s3rglx" target="_blank">https:&#x2F;&#x2F;www.github.com&#x2F;s3rglx</a></div>
+            </div>
+            <div class="contact-item">
+              <div class="icon pull-left text-center"><span class="fab fa-xing fa-fw"></span></div>
+              <div class="title pull-right">Xing</div>
+              <div class="description pull-right"><a href="https:&#x2F;&#x2F;www.xing.com&#x2F;profile&#x2F;Sergej_Lopatin" target="_blank">https:&#x2F;&#x2F;www.xing.com&#x2F;profile&#x2F;Sergej_Lopatin</a></div>
+            </div>
+          </div>
+          <!-- EDUCATION -->
+          <div class="box">
+            <h2><i class="fas fa-university ico"></i> Ausbildung</h2>
+            <ul id="education" class="clearfix">
+              <li>
+                <div class="year pull-left">2018 2021</div>
+                <div class="description pull-right">
+                  <h3>Technische Hochschule Mittelhessen</h3>
+                  <div class="where"></div>
+                  <div class="address">
+                    <a href="https:&#x2F;&#x2F;www.thm.de&#x2F;" target= "_blank"><i class="fas fa-globe ico"></i> https:&#x2F;&#x2F;www.thm.de&#x2F;</a>
+                  </div>
+                  <p><i class= "fas fa-graduation-cap ico"></i> Bachelor of Science</p>
+                  <p>Informatik</p>
+                  <p>
+                    Abschluss: 1,3
+                  </p>
+                </div>
+              </li>
+              <li>
+                <div class="year pull-left">2010 2014</div>
+                <div class="description pull-right">
+                  <h3>Werner-von-Siemens-Schule Wetzlar</h3>
+                  <div class="where"></div>
+                  <div class="address">
+                    <a href="https:&#x2F;&#x2F;siemensschule-wetzlar.de&#x2F;" target= "_blank"><i class="fas fa-globe ico"></i> https:&#x2F;&#x2F;siemensschule-wetzlar.de&#x2F;</a>
+                  </div>
+                  <p><i class= "fas fa-graduation-cap ico"></i> Teilzeitstudium zum staatlich geprüften Techniker</p>
+                  <p>Maschinenbau</p>
+                  <p>
+                    Abschluss: 1,9
+                  </p>
+                </div>
+              </li>
+              <li>
+                <div class="year pull-left">2007 2010</div>
+                <div class="description pull-right">
+                  <h3>Werner-von-Siemens-Schule Wetzlar</h3>
+                  <div class="where"></div>
+                  <div class="address">
+                    <a href="https:&#x2F;&#x2F;siemensschule-wetzlar.de&#x2F;" target= "_blank"><i class="fas fa-globe ico"></i> https:&#x2F;&#x2F;siemensschule-wetzlar.de&#x2F;</a>
+                  </div>
+                  <p><i class= "fas fa-graduation-cap ico"></i> Fachhochschulreife</p>
+                  <p></p>
+                  <p>
+                    Abschluss: 1,9
+                  </p>
+                </div>
+              </li>
+              <li>
+                <div class="year pull-left">2006 2010</div>
+                <div class="description pull-right">
+                  <h3>Siemens VDO</h3>
+                  <div class="where"></div>
+                  <div class="address">
+                    <a href="https:&#x2F;&#x2F;www.continental.com" target= "_blank"><i class="fas fa-globe ico"></i> https:&#x2F;&#x2F;www.continental.com</a>
+                  </div>
+                  <p><i class= "fas fa-graduation-cap ico"></i> Ausbildung</p>
+                  <p>Industriemechanik</p>
+                  <p>
+                    Abschluss: 1,7
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <!-- SKILLS -->
+          <div class="box">
+            <h2><i class="fas fa-tasks ico"></i> Fertigkeiten</h2>
+            <div class="skills clearfix">
+              <div class="item-skills">
+                  Soft Skills
+                  
+              </div>
+              <div class="col-sm-offset-1 col-sm-12 clearfix">
+                <span class= "skill badge">Kommunikationsfähigkeit</span>
+                <span class= "skill badge">Teamfähigkeit im internationelen Umfeld</span>
+                <span class= "skill badge">Eigeninitiative</span>
+                <span class= "skill badge">Lernbereitschaft</span>
+                <span class= "skill badge">Analytisches Denken</span>
+                <span class= "skill badge">Qualitätsbewusstsein</span>
+                <span class= "skill badge">Durchsetzungsvermögen</span>
+              </div>
+            </div>
+            <div class="skills clearfix">
+              <div class="item-skills">
+                  Cloud &amp; Orchestrierung
+                  <span class="skill-level">Fortgeschritten</span>
+              </div>
+              <div class="col-sm-offset-1 col-sm-12 clearfix">
+                <span class= "skill badge">Kubernetes</span>
+                <span class= "skill badge">AWS (EKS, ECR, EC2, AMI)</span>
+                <span class= "skill badge">Docker/Compose</span>
+                <span class= "skill badge">Cloud-agnostische Architekturen</span>
+                <span class= "skill badge">Helm Charts</span>
+              </div>
+            </div>
+            <div class="skills clearfix">
+              <div class="item-skills">
+                  Datenwissenschaft
+                  <span class="skill-level">Fortgeschritten</span>
+              </div>
+              <div class="col-sm-offset-1 col-sm-12 clearfix">
+                <span class= "skill badge">Deep Learning</span>
+                <span class= "skill badge">PyTorch</span>
+                <span class= "skill badge">numpy</span>
+                <span class= "skill badge">pandas</span>
+                <span class= "skill badge">matplotlib</span>
+                <span class= "skill badge">Datenvisualisierung</span>
+                <span class= "skill badge">Neuronale Netze</span>
+              </div>
+            </div>
+            <div class="skills clearfix">
+              <div class="item-skills">
+                  Programmiersprachen
+                  <span class="skill-level">Fortgeschritten</span>
+              </div>
+              <div class="col-sm-offset-1 col-sm-12 clearfix">
+                <span class= "skill badge">Python</span>
+                <span class= "skill badge">C/C++</span>
+                <span class= "skill badge">Java</span>
+                <span class= "skill badge">Golang</span>
+                <span class= "skill badge">Haskell</span>
+              </div>
+            </div>
+            <div class="skills clearfix">
+              <div class="item-skills">
+                  Webtechnologien
+                  <span class="skill-level">Mittelstufe</span>
+              </div>
+              <div class="col-sm-offset-1 col-sm-12 clearfix">
+                <span class= "skill badge">HTML5</span>
+                <span class= "skill badge">CSS3</span>
+                <span class= "skill badge">SCSS</span>
+                <span class= "skill badge">JavaScript</span>
+                <span class= "skill badge">Meteor.js</span>
+                <span class= "skill badge">Node.js</span>
+              </div>
+            </div>
+            <div class="skills clearfix">
+              <div class="item-skills">
+                  Embedded Entwicklung
+                  <span class="skill-level">Mittelstufe</span>
+              </div>
+              <div class="col-sm-offset-1 col-sm-12 clearfix">
+                <span class= "skill badge">Yocto Bitbake</span>
+                <span class= "skill badge">Embedded Linux</span>
+                <span class= "skill badge">Adaptive AUTOSAR</span>
+                <span class= "skill badge">Classic AUTOSAR</span>
+                <span class= "skill badge">DLT</span>
+                <span class= "skill badge">CAN-BUS</span>
+                <span class= "skill badge">Automotive Ethernet</span>
+                <span class= "skill badge">NXP S32G</span>
+              </div>
+            </div>
+            <div class="skills clearfix">
+              <div class="item-skills">
+                  Test &amp; CI&#x2F;CD
+                  <span class="skill-level">Fortgeschritten</span>
+              </div>
+              <div class="col-sm-offset-1 col-sm-12 clearfix">
+                <span class= "skill badge">Jenkins</span>
+                <span class= "skill badge">Github Actions</span>
+                <span class= "skill badge">pytest</span>
+                <span class= "skill badge">scapy</span>
+              </div>
+            </div>
+            <div class="skills clearfix">
+              <div class="item-skills">
+                  Versionsverwaltung
+                  <span class="skill-level">Fortgeschritten</span>
+              </div>
+              <div class="col-sm-offset-1 col-sm-12 clearfix">
+                <span class= "skill badge">Git</span>
+                <span class= "skill badge">GitHub</span>
+                <span class= "skill badge">Gerrit</span>
+                <span class= "skill badge">Repo Tool</span>
+              </div>
+            </div>
+            <div class="skills clearfix">
+              <div class="item-skills">
+                  Weitere Tools &amp; Methoden
+                  
+              </div>
+              <div class="col-sm-offset-1 col-sm-12 clearfix">
+                <span class= "skill badge">Jira</span>
+                <span class= "skill badge">Confluence</span>
+                <span class= "skill badge">Scrum</span>
+                <span class= "skill badge">Bash/Shell</span>
+                <span class= "skill badge">Systemd</span>
+                <span class= "skill badge">PlantUML</span>
+                <span class= "skill badge">Sphinx</span>
+                <span class= "skill badge">Sphinx-Needs</span>
+                <span class= "skill badge">SolidWorks</span>
+                <span class= "skill badge">SolidCAM</span>
+                <span class= "skill badge">Catia V5</span>
+                <span class= "skill badge">AutoCAD</span>
+                <span class= "skill badge">Fusion 360</span>
+              </div>
+            </div>
+          </div>
+          <!-- PUBLICATIONS -->
+          <div class="box">
+            <h2><i class="fas fa-book ico"></i> Publikationen</h2>
+            <div class="publication panel panel-default">
+              <div class="panel-heading">
+                <div class="name panel-title">An Electronic Guide Dog for the Blind Based on Artificial Neural Networks</div>
+              </div>
+              <div class="panel-body">
+                <div class="publisher"><i class= "fas fa-bookmark ico"></i> HCI International 2021</div>
+                <div class="year"> November  2021</div>
+                <div class="address">
+                  <a href="http:&#x2F;&#x2F;dx.doi.org&#x2F;10.1007&#x2F;978-3-030-90179-0_4" target= "_blank"><i class="fas fa-globe ico"></i> http:&#x2F;&#x2F;dx.doi.org&#x2F;10.1007&#x2F;978-3-030-90179-0_4</a>
+                </div>
+                <p>Diese Arbeit präsentiert eine Machbarkeitsstudie eines elektronischen Assistenzsystems zur Unterstützung blinder und sehbehinderter Menschen bei der Orientierung im öffentlichen Verkehr. Die optische Erkennung von Gehwegen wird implementiert. Zu diesem Zweck wird ein neuronales Netz zur semantischen Segmentierung von Grund auf trainiert. Im Praxistest wird eine NVIDIA® Jetson Nano™ als Recheneinheit verwendet. Eine Sprachausgabe gibt dem Nutzer Feedback zur Orientierung auf dem Gehweg.</p>
+              </div>
+            </div>
+          </div>
+          <!-- LANGUAGES -->
+          <div class="box">
+            <h2><i class="fas fa-language ico"></i> Sprachen</h2>
+            <ul class="list-group">
+              <li class=" list-group-item">Deutsch<span class="skill badge pull-right">Muttersprache</span></li>
+              <li class=" list-group-item">Englisch<span class="skill badge pull-right">Fließend</span></li>
+              <li class=" list-group-item">Russisch<span class="skill badge pull-right">Fließend</span></li>
+            </ul>
+          </div>
+          <!-- HOBBIES -->
+          <div class="box">
+            <h2><i class="fas fa-heart ico"></i> Interessen</h2>
+            <div class="interests clearfix">
+              <div class="item-interests">
+                  Informations- und Kommunikationstechnologien
+              </div>
+              <div class="col-sm-offset-1 col-sm-12 clearfix">
+                <span class= "interest badge">HomeLab</span>
+                <span class= "interest badge">Smart Home</span>
+                <span class= "interest badge">Open Source</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>
